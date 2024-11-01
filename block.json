@@ -1,0 +1,39 @@
+{
+	"apiVersion": 2,
+	"name": "tiles/marquee",
+	"title": "Marquee",
+	"category": "design",
+	"description": "Use the Tiles marquee to add an fullwidth marquee to the page.",
+        "keywords": [ "tiles", "marquee", "notice", "cta", "animation" ],
+	"textdomain": "tiles-marquee-block",
+        "attributes": {
+                "content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p",
+			"default": ""
+		},
+                "align": {
+                        "type": "string",
+			"default": "full"
+		},
+		"speed": {
+                        "type": "number"
+		},
+                "fontSize": {
+			"default": "huge"
+		}
+	},
+        "supports": {
+		"align": [ "wide", "full" ],
+		"html": false,
+                "color": true,
+                "fontSize": true,
+		"spacing": {
+			"padding": true
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
